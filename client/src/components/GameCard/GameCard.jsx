@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import STYLES from './GameCard.scss';
+import STYLES from './GameCard.module.scss';
 
 const GameCard = () => (
     <div className={STYLES.GameCard}>

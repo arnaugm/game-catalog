@@ -1,7 +1,8 @@
 import React from 'react';
+
 import GameCard from './components/GameCard';
 
-import STYLES from './App.scss';
+import STYLES from './App.module.scss';
 
 const App = () => {
   return (

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameCard should render correctly 1`] = `
+<div
+  className="GameCard"
+>
+  I'm a game!
+</div>
+`;
