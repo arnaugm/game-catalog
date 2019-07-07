@@ -1,13 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import STYLES from './GameCard.module.scss';
 
-const GameCard = () => (
-    <div className={STYLES.GameCard}>
-        I'm a game!
-    </div>
-);
+const GameCard = () => <div className={STYLES.GameCard}>Hello game!</div>;
 
 GameCard.propTypes = {};
 
