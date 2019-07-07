@@ -1,0 +1,6 @@
+{
+  "extends": "stylelint-config-skyscanner",
+  "rules": {
+    "unit-blacklist": ["px", "em"]
+  }
+}

@@ -14,6 +14,8 @@
     "eject": "react-scripts eject",
     "lint:js": "eslint . --ignore-path .gitignore --ext .js,.jsx",
     "lint:js:fix": "eslint . --ignore-path .gitignore --ext js,jsx --fix",
+    "lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
+    "lint:scss:fix": "stylefmt --recursive 'src/**/*.scss'",
     "prettier": "prettier --config .prettierrc --write \"**/*.{js,jsx}\""
   },
   "husky": {
@@ -49,6 +51,9 @@
     "husky": "^3.0.0",
     "lint-staged": "^9.1.0",
     "node-sass": "^4.12.0",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "stylefmt": "^6.0.3",
+    "stylelint": "^10.1.0",
+    "stylelint-config-skyscanner": "^1.0.1"
   }
 }
