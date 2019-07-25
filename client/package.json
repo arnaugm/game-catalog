@@ -26,6 +26,9 @@
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
       "npm run lint:js"
+    ],
+    "src/**/*.scss": [
+      "npm run lint:scss"
     ]
   },
   "eslintConfig": {
