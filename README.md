@@ -1,5 +1,7 @@
 # Game Catalog
 
+Create videogame catalogs
+
 ## Setup
 
 `cd client && npm install`
