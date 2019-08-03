@@ -1,6 +1,7 @@
 from aiohttp import web
 import aiohttp_jinja2
 import jinja2
+import os
 
 from settings import config, BASE_DIR
 
@@ -18,4 +19,6 @@ app.add_routes([web.get('/', hello)])
 app.router.add_static('/static/',
                       path=BASE_DIR / 'static',
                       name='static')
-web.run_app(app)
+
+port = int(os.environ.get("PORT", 8080))
+web.run_app(app, port=port)
