@@ -1,6 +1,8 @@
 # Game Catalog
 
-Create videogame catalogs
+Create videogame catalogs.
+
+The app runs in Heroku in https://game-catalog.herokuapp.com
 
 ## Setup
 
