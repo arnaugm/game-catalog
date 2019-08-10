@@ -1,7 +1,11 @@
 {
   "name": "game-catalog",
+  "engines": {
+    "node": "^8.16.0",
+    "npm": "^6.4.1"
+  },
   "scripts": {
-    "build": "cd client && npm install && npm run build",
+    "build": "cd client && NODE_ENV=development npm install && npm run build",
     "deploy": "cp -a client/build/. public/",
     "heroku-postbuild": "npm run build && npm run deploy"
   }
