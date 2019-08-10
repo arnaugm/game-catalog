@@ -39,3 +39,6 @@ for the client, will be redirected to the Python API.
 
 The Heroku app has two [buildpacks](https://devcenter.heroku.com/articles/buildpacks) configured: a Node.js one which will
 build the client and place it in the server public folder, and a Python one to run the API.
+
+NODE_ENV in production is set to `development` with `heroku config:set NODE_ENV=development` because Node.js is only used
+to build the client and `devDependencies` are necessary for it.
