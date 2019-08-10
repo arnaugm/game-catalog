@@ -15,10 +15,10 @@ app['config'] = config
 aiohttp_jinja2.setup(app,
     loader=jinja2.FileSystemLoader(str(BASE_DIR / 'app' / 'templates')))
 
-app.add_routes([web.get('/', hello)])
-app.router.add_static('/static/',
-                      path=BASE_DIR / 'static',
-                      name='static')
+# app.add_routes([web.get('/', hello)])
+app.router.add_static('/',
+                      path=BASE_DIR / 'public/static',
+                      name='public')
 
 port = int(os.environ.get("PORT", 8080))
 web.run_app(app, port=port)
