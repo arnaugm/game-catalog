@@ -4,12 +4,38 @@ Create videogame catalogs.
 
 The app runs in Heroku in https://game-catalog.herokuapp.com
 
+This app is built using Create React App in the front-end which queries an AIOHTTP API in the server.
+
 ## Setup
 
-`cd client && npm install`
+### Python server
+
+- Install Python 3.7, ideally with a virtual environment
+  - See how to create a Python virtual environment with [pyenv-virtualenv](docs/PYENV-VIRTUALENV.md)
+- Install dependencies
+```
+pip install -r requirements.txt
+```
+
+### React client
+- Install Node.js, ideally with a node version manager like [nvm](https://github.com/nvm-sh/nvm)
+- Install dependencies
+```
+cd client && npm install
+```
 
 ## Run the project
 
-Server: `python app/main.py`
+Use Heroku CLI to run both server and client at the same time.
+```
+heroku local -f Procfile.dev
+```
+React client will be available in `http://localhost:3000` and the AIOHTTP API can be accessed from `http://localhost:8080`.
 
-Client: `cd client && npm start`
+For faster development, `package.json` configures a proxy using the `proxy` field, and any request to a url that is unknown
+for the client, will be redirected to the Python API.
+
+## Running in production
+
+The Heroku app has two [buildpacks](https://devcenter.heroku.com/articles/buildpacks) configured: a Node.js one which will
+build the client and place it in the server public folder, and a Python one to run the API.

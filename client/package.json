@@ -2,10 +2,24 @@
   "name": "game-catalog-client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8080",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
+  },
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.3.5",
+    "eslint-config-skyscanner-with-prettier": "^0.8.0",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.1.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
+    "stylefmt": "^6.0.3",
+    "stylelint": "^10.1.0",
+    "stylelint-config-skyscanner": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -45,18 +59,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
-    "enzyme-to-json": "^3.3.5",
-    "eslint-config-skyscanner-with-prettier": "^0.8.0",
-    "husky": "^3.0.0",
-    "lint-staged": "^9.1.0",
-    "node-sass": "^4.12.0",
-    "prettier": "^1.18.2",
-    "stylefmt": "^6.0.3",
-    "stylelint": "^10.1.0",
-    "stylelint-config-skyscanner": "^1.0.1"
   }
 }

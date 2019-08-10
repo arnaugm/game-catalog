@@ -1,0 +1,2 @@
+web: PORT=3000 cd client && npm start
+api: PORT=8080 python app/main.py
