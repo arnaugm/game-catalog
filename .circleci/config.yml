@@ -41,7 +41,10 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
+          keys:
+            - deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
+            # fallback to using the latest cache if no exact match is found
+            - deps1-{{ .Branch }}-
       - run:
           name: Install Python deps in a venv
           command: |

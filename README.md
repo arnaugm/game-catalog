@@ -36,6 +36,41 @@ React client will be available in `http://localhost:3000` and the AIOHTTP API ca
 For faster development, `package.json` configures a proxy using the `proxy` field, and any request to a url that is unknown
 for the client, will be redirected to the Python API.
 
+## Testing and linting
+
+### Server linting
+
+```
+TODO
+```
+
+### Server tests
+
+```
+TODO
+```
+
+### Client linting
+
+Client linting is executed as a pre-commit hooks thanks husky` and `lint-staged`.
+
+```
+cd client
+npm run lint:js
+npm run lint:scss
+```
+
+### Client tests
+
+```
+cd client && npm test
+````
+
+## Continuous Integration
+
+The project uses [CircleCI](https://circleci.com) to validate changes and its configuration is stored in
+`.circleci/config.yml` file.
+
 ## Running in production
 
 The Heroku app has two [buildpacks](https://devcenter.heroku.com/articles/buildpacks) configured: a Node.js one which will
