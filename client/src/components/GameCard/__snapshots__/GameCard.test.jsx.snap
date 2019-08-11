@@ -4,6 +4,6 @@ exports[`GameCard should render correctly 1`] = `
 <div
   className="GameCard"
 >
-  I'm a game!
+  Hello game!
 </div>
 `;
