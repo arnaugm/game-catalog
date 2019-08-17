@@ -61,7 +61,7 @@ jobs:
           name: Run tests
           command: |
             . venv/bin/activate
-            python --version
+            make black lint test
 
 workflows:
   version: 2
