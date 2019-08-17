@@ -5,13 +5,14 @@ install_requires = [
     'aiodns',
     'cchardet',
     'pyyaml',
-    'pip-tools',
 ]
 
 dev_requires = [
     'black',
     'flake8',
+    'pip-tools',
     'pytest',
+    'python-githooks'
 ]
 
 setup(

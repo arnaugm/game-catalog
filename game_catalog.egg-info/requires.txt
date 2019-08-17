@@ -1,0 +1,11 @@
+aiohttp
+aiodns
+cchardet
+pyyaml
+
+[dev]
+black
+flake8
+pip-tools
+pytest
+python-githooks
