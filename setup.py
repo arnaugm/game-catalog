@@ -13,6 +13,7 @@ dev_requires = [
     'flake8',
     'pip-tools',
     'pytest',
+    'pytest-aiohttp',
     'python-githooks'
 ]
 

@@ -1,4 +1,5 @@
 README.md
+setup.cfg
 setup.py
 game_catalog.egg-info/PKG-INFO
 game_catalog.egg-info/SOURCES.txt
