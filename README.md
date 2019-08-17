@@ -41,13 +41,13 @@ for the client, will be redirected to the Python API.
 ### Server linting
 
 ```
-TODO
+make black lint
 ```
 
 ### Server tests
 
 ```
-TODO
+make test
 ```
 
 ### Client linting
