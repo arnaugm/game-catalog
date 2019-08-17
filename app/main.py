@@ -1,7 +1,7 @@
 from aiohttp import web
 import os
 
-from settings import config, BASE_DIR
+from app.settings import config, BASE_DIR
 
 
 async def index(request):

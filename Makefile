@@ -31,4 +31,4 @@ freeze:
 freeze-upgrade:
 	CUSTOM_COMPILE_COMMAND="make freeze" pip-compile --no-index --upgrade --output-file requirements.txt setup.py
 
-.PHONY: install install-dev prettify balck lint test coverage run freeze freeze-upgrade
+.PHONY: install install-dev prettify black lint test coverage run freeze freeze-upgrade
