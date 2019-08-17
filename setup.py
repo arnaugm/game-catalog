@@ -5,6 +5,7 @@ install_requires = [
     'aiodns',
     'cchardet',
     'pyyaml',
+    'uvloop',
 ]
 
 dev_requires = [
