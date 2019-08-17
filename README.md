@@ -14,7 +14,7 @@ This app is built using Create React App in the front-end which queries an AIOHT
   - See how to create a Python virtual environment with [pyenv-virtualenv](docs/PYENV-VIRTUALENV.md)
 - Install dependencies
 ```
-pip install -r requirements.txt
+make install-dev
 ```
 
 ### React client
