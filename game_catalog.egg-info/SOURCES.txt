@@ -1,8 +1,0 @@
-README.md
-setup.cfg
-setup.py
-game_catalog.egg-info/PKG-INFO
-game_catalog.egg-info/SOURCES.txt
-game_catalog.egg-info/dependency_links.txt
-game_catalog.egg-info/requires.txt
-game_catalog.egg-info/top_level.txt
