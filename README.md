@@ -26,10 +26,18 @@ cd client && npm install
 
 ## Run the project
 
-Activate Python's virtual environment and use Heroku CLI to run both server and client at the same time.
+Install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) if you want to run Herkou commands (not necessary to run the app locally).
+Activate Python's virtual environment, build the client and run both server and client.
 ```
 pyenv activate game-catalog
+npm run build && npm run deploy
+
+# run server and client using Heroku CLI
 heroku local -f Procfile.dev
+
+# without Heroku CLI, use two terminals
+make run                    # server
+cd client && npm start      # client
 ```
 React client will be available in `http://localhost:3000` and the AIOHTTP API can be accessed from `http://localhost:8080`.
 

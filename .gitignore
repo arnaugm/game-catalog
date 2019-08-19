@@ -1,4 +1,7 @@
 # Python
 *.pyc
+.eggs
+*.egg-info
+.python-version
 build/
 public/
