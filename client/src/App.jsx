@@ -1,11 +1,13 @@
 import React from 'react';
 
-import GameCard from './components/GameCard';
+import AppHeader from './components/AppHeader';
+import AppBody from './components/AppBody';
 import STYLES from './App.module.scss';
 
 const App = () => (
   <div className={STYLES.App}>
-    <GameCard />
+    <AppHeader />
+    <AppBody />
   </div>
 );
 
