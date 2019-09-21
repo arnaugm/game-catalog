@@ -11,7 +11,13 @@ codes = json.loads(codes_string)
 
 @pytest.mark.parametrize(
     "static_wheel,moving_wheel,cell,expected",
-    [("1", "1", 1, "E"), ("1", "1", 2, "R"), ("1", "0", 2, "I"), ("1", "B", 2, "U")],
+    [
+        ("1", "1", 1, "E"),
+        ("1", "1", 2, "R"),
+        ("1", "0", 2, "I"),
+        ("1", "B", 2, "U"),
+        ("1", "Y", 1, "R"),
+    ],
 )
 def test_get_code_starting_point(static_wheel, moving_wheel, cell, expected):
     code = get_code(static_wheel, moving_wheel, cell, codes)
@@ -21,11 +27,11 @@ def test_get_code_starting_point(static_wheel, moving_wheel, cell, expected):
 @pytest.mark.parametrize(
     "static_wheel,moving_wheel,cell,expected",
     [
-        ("2", "1", 1, "R"),
-        ("2", "1", 2, "I"),
         ("2", "0", 2, "M"),
         ("2", "B", 2, "N"),
-        ("E", "0", 11, "S"),
+        ("5", "G", 8, "I"),
+        ("Y", "Z", 18, "R"),
+        ("2", "Z", 9, "G"),
     ],
 )
 def test_get_code_moving_wheel(static_wheel, moving_wheel, cell, expected):
@@ -35,9 +41,15 @@ def test_get_code_moving_wheel(static_wheel, moving_wheel, cell, expected):
 
 @pytest.mark.parametrize(
     "static_wheel,moving_wheel,cell,expected",
-    [("1", "Y", 1, "R"), ("3", "Y", 1, "N"), ("3", "2", 1, "R")],
+    [
+        ("2", "1", 1, "R"),
+        ("2", "1", 2, "I"),
+        ("E", "0", 11, "S"),
+        ("3", "2", 1, "R"),
+        ("E", "4", 13, "G"),
+    ],
 )
-def test_get_code_moving_wheel_backwards(static_wheel, moving_wheel, cell, expected):
+def test_get_code_moving_wheel_beyond_edge(static_wheel, moving_wheel, cell, expected):
     code = get_code(static_wheel, moving_wheel, cell, codes)
     assert code == expected
 
