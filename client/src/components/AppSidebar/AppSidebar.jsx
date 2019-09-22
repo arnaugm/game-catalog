@@ -1,6 +1,6 @@
 import React from 'react';
 
-import STYLES from './AppSidebar.module.scss';
+import STYLES from './AppSidebar.scss';
 
 const AppSidebar = () => <div className={STYLES.AppSidebar}>Sidebar</div>;
 

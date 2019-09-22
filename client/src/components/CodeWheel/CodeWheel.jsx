@@ -1,7 +1,7 @@
 import React from 'react';
 import BpkSelect from 'bpk-component-select';
 
-import STYLES from './CodeWheel.module.scss';
+import STYLES from './CodeWheel.scss';
 
 const keys = [
   '1',
