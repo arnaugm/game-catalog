@@ -34,6 +34,7 @@ const keys = [
   'R',
   'S',
   'T',
+  'U',
   'V',
   'W',
   'X',
@@ -47,7 +48,7 @@ const CodeWheel = () => (
       id="static-wheel"
       name="static-wheel"
       value="Static wheel"
-      onChange={(e) => console.log(`Static wheel changed to ${e.target.value}`)}
+      onChange={e => console.log(`Static wheel changed to ${e.target.value}`)}
     >
       {keys.map(k => (
         <option value={k}>{k}</option>
@@ -57,7 +58,7 @@ const CodeWheel = () => (
       id="moving-wheel"
       name="moving-wheel"
       value="Moving wheel"
-      onChange={(e) => console.log(`Moving wheel changed to ${e.target.value}`)}
+      onChange={e => console.log(`Moving wheel changed to ${e.target.value}`)}
     >
       {keys.map(k => (
         <option value={k}>{k}</option>

@@ -13,7 +13,9 @@ const App = () => (
   <div className={c('App')}>
     <header className={c('App__header')}>
       <div className={c('App__header-inner')}>
-        <BpkText tagName="h1" textStyle="xxl" className={c('App__heading')}>Welcome to React + Backpack</BpkText>
+        <BpkText tagName="h1" textStyle="xxl" className={c('App__heading')}>
+          Welcome to React + Backpack
+        </BpkText>
       </div>
     </header>
     <main className={c('App__main')}>
