@@ -1,5 +1,16 @@
+@import '~bpk-mixins';
+
 .CodeWheel {
-  background-image: url('./code_wheel.gif');
-  width: 320px;
-  height: 200px;
+  margin: auto;
+
+  &__selectArea {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__selector {
+    display: flex;
+    margin: $bpk-spacing-xs;
+    flex-direction: column;
+  }
 }

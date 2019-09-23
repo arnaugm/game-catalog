@@ -1,3 +1,3 @@
-import CodeWheel from './CodeWheel';
+import component from './CodeWheelContainer';
 
-export default CodeWheel;
+export default component;
