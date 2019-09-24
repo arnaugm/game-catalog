@@ -1,5 +1,8 @@
-import React from "react";
-import CodeWheel from "./CodeWheel";
+import React from 'react';
+
+import gateway from '../../services/gateway';
+
+import CodeWheel from './CodeWheel';
 
 class CodeWheelContainer extends React.Component {
   constructor(props) {
@@ -18,22 +21,36 @@ class CodeWheelContainer extends React.Component {
 
   onStaticWheelChange(e) {
     this.setState({ staticWheel: e.target.value });
-    this.getCode({ staticWheel: e.target.value, movingWheel: this.state.movingWheel, cell: this.state.cell });
+    this.getCode({
+      staticWheel: e.target.value,
+      movingWheel: this.state.movingWheel,
+      cell: this.state.cell,
+    });
   }
 
   onMovingWheelChange(e) {
     this.setState({ movingWheel: e.target.value });
-    this.getCode({ staticWheel: this.state.staticWheel, movingWheel: e.target.value, cell: this.state.cell });
+    this.getCode({
+      staticWheel: this.state.staticWheel,
+      movingWheel: e.target.value,
+      cell: this.state.cell,
+    });
   }
 
   onCellChange(e) {
     this.setState({ cell: e.target.value });
-    this.getCode({ staticWheel: this.state.staticWheel, movingWheel: this.state.movingWheel, cell: e.target.value });
+    this.getCode({
+      staticWheel: this.state.staticWheel,
+      movingWheel: this.state.movingWheel,
+      cell: e.target.value,
+    });
   }
 
-  getCode(combination) {
-    const { staticWheel, movingWheel, cell } = combination;
-    this.setState({ code: cell });
+  async getCode(combination) {
+    const code = await gateway.codeWheel(combination);
+    if (code) {
+      this.setState({ code });
+    }
   }
 
   render() {
