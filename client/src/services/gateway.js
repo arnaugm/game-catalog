@@ -5,7 +5,7 @@ const gateway = {
     }
 
     const response = await fetch(
-      `http://localhost:8080/api/wheel?static_wheel=${staticWheel}&moving_wheel=${movingWheel}&cell=${cell}`,
+      `/api/wheel?static_wheel=${staticWheel}&moving_wheel=${movingWheel}&cell=${cell}`,
     );
 
     const json = await response.json();

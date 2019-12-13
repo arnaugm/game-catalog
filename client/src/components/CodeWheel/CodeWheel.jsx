@@ -96,11 +96,13 @@ const CodeWheel = ({
         <BpkLabel htmlFor="cell">Cell</BpkLabel>
         <BpkSelect id="cell" name="cell" value={cell} onChange={onCellChange}>
           <option />
-          {keys.map(k => (
-            <option key={`cell-${k}`} value={k}>
-              {k}
-            </option>
-          ))}
+          {Array(18)
+            .fill('')
+            .map((val, index) => (
+              <option key={`cell-${index + 1}`} value={index + 1}>
+                {index + 1}
+              </option>
+            ))}
         </BpkSelect>
       </div>
     </div>
