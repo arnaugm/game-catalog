@@ -1,0 +1,16 @@
+@import '~bpk-mixins';
+
+.CodeWheel {
+  margin: auto;
+
+  &__selectArea {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__selector {
+    display: flex;
+    margin: $bpk-spacing-xs;
+    flex-direction: column;
+  }
+}

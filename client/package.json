@@ -7,24 +7,6 @@
     "node": "^8.16.0",
     "npm": "^6.4.1"
   },
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
-  },
-  "devDependencies": {
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
-    "enzyme-to-json": "^3.3.5",
-    "eslint-config-skyscanner-with-prettier": "^0.8.0",
-    "husky": "^3.0.0",
-    "lint-staged": "^9.1.0",
-    "node-sass": "^4.12.0",
-    "prettier": "^1.18.2",
-    "stylefmt": "^6.0.3",
-    "stylelint": "^10.1.0",
-    "stylelint-config-skyscanner": "^1.0.1"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -35,6 +17,31 @@
     "lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
     "lint:scss:fix": "stylefmt --recursive 'src/**/*.scss'",
     "prettier": "prettier --config .prettierrc --write \"**/*.{js,jsx}\""
+  },
+  "dependencies": {
+    "backpack-react-scripts": "7.0.1"
+  },
+  "devDependencies": {
+    "bpk-component-button": "^2.5.14",
+    "bpk-component-code": "^1.1.101",
+    "bpk-component-label": "^3.3.3",
+    "bpk-component-select": "^2.4.5",
+    "bpk-component-text": "^1.1.28",
+    "bpk-mixins": "^18.1.5",
+    "bpk-stylesheets": "^3.3.16",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
+    "eslint-config-skyscanner-with-prettier": "^0.8.0",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.3.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "stylefmt": "^6.0.3",
+    "stylelint": "^11.0.0",
+    "stylelint-config-skyscanner": "^1.0.1"
   },
   "husky": {
     "hooks": {
@@ -52,16 +59,10 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
