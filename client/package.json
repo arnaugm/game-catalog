@@ -19,7 +19,7 @@
     "eslint-config-skyscanner-with-prettier": "^0.8.0",
     "husky": "^3.0.0",
     "lint-staged": "^9.1.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "prettier": "^1.18.2",
     "stylefmt": "^6.0.3",
     "stylelint": "^10.1.0",
