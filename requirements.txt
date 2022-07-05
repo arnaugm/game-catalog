@@ -13,7 +13,7 @@ cffi==1.12.3              # via pycares
 chardet==3.0.4            # via aiohttp
 idna==2.8                 # via yarl
 multidict==4.5.2          # via aiohttp, yarl
-pycares==3.0.0            # via aiodns
+pycares==4.2.0            # via aiodns
 pycparser==2.19           # via cffi
 pyyaml==5.1.2
 uvloop==0.13.0
